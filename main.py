@@ -1,13 +1,21 @@
-productos = []
-
-def mostraremuñoa():
-    print("\n1) Agregar producto\n2)Mostrar inventario\n3)Calcular estadisticas")
-    print("\n 4) Salir (❁´◡`❁)")
-
+def mostrar_menu():
+    print("\n1) Agregar producto")
+    print("2) Mostrar inventario")
+    print("3) Calcular estadísticas")
+    print("4) Salir")
 
 while True:
-    mostraremuñoa()
-    sdk= input("Elige una opcion por favor: ")
+    mostrar_menu()
+    opcion = input("Elige una opción: ")
 
-    if sdk== "1":   
+    if opcion == "1":
+        print("Not created")
+    elif opcion == "2":
+        print("Función aún no implementada")
+    elif opcion == "3":
+        print("Not created")
+    elif opcion == "4":
+        print("Saliendo...")
         break
+    else:
+        print("✕ Opción inválida, intenta otra vez")
