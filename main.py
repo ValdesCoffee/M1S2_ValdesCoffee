@@ -27,6 +27,17 @@ def Agregarproducto(nombre,precio, cantidad, categoria, lista):
         "Categoria": categoria,
     }
     lista.append(nuevo_producto)
+def calcularproducts(productos):
+    for producto in productos:
+        iti = producto["Producto"]
+        precio = producto["Precio"]
+        cantidadeofjoijgi = producto["Cantidad"]
+
+        propeso = precio * cantidadeofjoijgi
+
+        print(f"\nTu {iti} tiene este precio {precio} por unidad")
+        print(f"Con el precio total de {propeso}")
+
 while True:
     mostraremuñoa()
     sdk = input("Elige una opción: ")
@@ -43,7 +54,7 @@ while True:
     elif sdk == "2":
          Mostrarproducto(productos)
     elif sdk == "3":
-        print("Pendiente")
+        calcularproducts(productos)
     elif sdk == "4":
         break
     else:
