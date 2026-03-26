@@ -1,21 +1,32 @@
-def mostrar_menu():
-    print("\n1) Agregar producto")
-    print("2) Mostrar inventario")
-    print("3) Calcular estadísticas")
-    print("4) Salir")
+inventario = []
+def mostraremuñoa():
+    print("\n1) Agregar producto\n2)Mostrar inventario\n3)Calcular estadisticas")
+    print("\n 4) Salir (❁´◡`❁)")
+def agregar_producto():
+    nombre = input("Nombre del producto: ")
+    precio = float(input("Precio: "))
+    cantidad = int(input("Cantidad: "))
+
+    producto = {
+        "nombre": nombre,
+        "precio": precio,
+        "cantidad": cantidad
+    }
+
+    inventario.append(producto)
+    print("✓ Producto agregado")
 
 while True:
-    mostrar_menu()
+    mostraremuñoa()
     opcion = input("Elige una opción: ")
 
     if opcion == "1":
-        print("Not created")
+        agregar_producto()
     elif opcion == "2":
-        print("Función aún no implementada")
+        print("Pendiente")
     elif opcion == "3":
-        print("Not created")
+        print("Pendiente")
     elif opcion == "4":
-        print("Saliendo...")
         break
     else:
-        print("✕ Opción inválida, intenta otra vez")
+        print(" Opción inválida")
